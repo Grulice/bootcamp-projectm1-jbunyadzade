@@ -1,0 +1,226 @@
+/* Reset default margins and paddings, use box-sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Remove underlines for anchor tags */
+a {
+    text-decoration: none;
+}
+
+.coin-list-body {
+    display: flex;
+    padding: 39px 0 48px 0;
+    align-items: center;
+}
+
+.coin-list-section {
+    margin: 0 6%;
+}
+
+.main-title {
+font-style: normal;
+font-weight: 300;
+font-size: 43px;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    min-width: 600px;
+    /* max-width: 920px; */
+}
+
+.coin-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+    width: 50%;
+    min-width: 515px;
+}
+
+.coin-img-container {
+    position: relative;
+    margin-right: 18px;
+}
+
+.coin-img-container img{
+    height: 172px;
+}
+
+.coin-discount {
+    color: white;
+
+    position: absolute;
+    border-radius: 50%;
+    background-color: #833AE0;
+    right:24px;
+    top:31px;
+
+    height:44px;
+    width:44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coin-desc-container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.coin-desc {
+    margin-right: 40px;
+}
+
+.coin-desc-head {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+    color: #833AE0; 
+}
+
+.coin-link {
+    color: inherit;
+}
+
+.coin-desc-body {
+    font-size: 14px;
+}
+
+
+.coin-price-final {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+
+    white-space: nowrap;
+    
+}
+
+.coin-price-nodisc {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+
+    color: #7A7A7A;
+}
+
+/* Styles for coin pages */
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+}
+
+.info-main-container {
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.info-img-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+
+    position: relative;
+}
+
+
+.info-img-container img {
+    margin-top: -83px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.info-img-container:hover .info-img-rear {
+    display: block;
+}
+
+.info-img-rear {
+    display: none;
+}
+
+
+
+.info-desc-container {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(196, 196, 196, 0.5);
+
+    width: 50%;
+    position: relative;
+    
+    padding: 12px 44px 50px 44px;
+}
+
+.info-desc-article {
+    padding: 1em 0;
+    font-size: 10px;
+}
+
+.info-desc-article-pretext {
+    color: #7A7A7A;
+}
+
+
+
+.info-desc-maintext {
+    margin: 1em 0;
+}
+
+.info-pricetag {
+    margin: 1em 0;
+}
+
+.info-pricetag-price {
+    font-weight: bold;
+    font-size: 28px;
+}   
+
+.info-desctable {
+    border-collapse: collapse;
+}
+
+.info-desctable tr {
+    border-bottom: 1px solid #b1abab;
+}
+
+.info-desctable tr:last-child {
+    border-bottom: none;
+}
+
+.info-desctable tr td {
+    padding: 6px 21px 6px 5px;
+}
+
+.info-desctable tr td:first-child {
+    border-right: 1px solid #b1abab;
+}
+
+.info-desctable tr:nth-child(odd) {
+    background-color: white;
+}
+
+.info-backbutton-container {
+    margin: 20px 0;
+}
+
+.info-backbutton-container a {
+    text-decoration: underline;
+}
