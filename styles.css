@@ -125,29 +125,29 @@ font-size: 43px;
 
 .info-main-container {
     width: 80%;
+    min-width: 600px;
+    max-width: 920px;
 
     display: flex;
     justify-content: center;
 }
 
 .info-img-container {
-    display: flex;
-    flex-direction: column;
-
     width: 50%;
 
     position: relative;
 }
 
 
-.info-img-container img {
-    margin-top: -83px;
+.info-img-wrapper img {
+    /* margin-top: -83px; */
     position:absolute;
     left:0;
     top:0;
+    width: 100%;
 }
 
-.info-img-container:hover .info-img-rear {
+.info-img-wrapper:hover .info-img-rear {
     display: block;
 }
 
@@ -195,6 +195,10 @@ font-size: 43px;
 
 .info-desctable {
     border-collapse: collapse;
+    width: 100%;
+
+    overflow-wrap: break-word;
+    table-layout: fixed;
 }
 
 .info-desctable tr {
